@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Red Departamental de Jardines Botánicos de Risaralda</title>
+    <style>
+        /* Estilos generales del cuerpo de la página */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            font-size: 110%;
+            align-items: center;
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+        }
+
+        /* Estilos del encabezado */
+        #encabezado {
+            display: flex;
+            align-items: center;
+            background: url('fondo.jpg') center/cover no-repeat;
+            padding: 20px;
+            color: white;
+        }
+
+        #logo {
+            width: 300px;
+            margin-right: 10px;
+            font-size: 500%;
+        }
+
+        #titulo {
+            text-align: center;
+            margin: 0;
+            font-size: 300%
+        }
+
+        /* Estilos del contenedor principal */
+        #contenedor {
+            display: flex;
+        }
+
+        #panel {
+            width: 250px;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+        }
+
+        #titulos-jardines {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+        }
+
+        a {
+            text-decoration: none;
+            color: black;
+        }
+
+        #jardin1,
+        #jardin2,
+        #jardin3 {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        #jardin1:hover,
+        #jardin2:hover,
+        #jardin3:hover {}
+
+        #titulos-menu {
+            flex: 1;
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            margin: 20px;
+        }
+
+        #menu1,
+        #menu2,
+        #menu3,
+        #menu4 {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #333;
+        }
+
+        #menu1:hover,
+        #menu2:hover,
+        #menu3:hover,
+        #menu4:hover a {
+            text-decoration: none;
+            color: black;
+            font-size: 110%;
+            /* Aumento del 20% */
+        }
+
+        #panel h3 {
+            margin-bottom: 10px;
+            cursor: pointer;
+            color: #004d40;
+        }
+
+        #panel h3:hover {}
+
+        .section {
+            padding: 20px;
+            margin-top: 20px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subsection {
+            display: none;
+            padding: 20px;
+            margin-top: 10px;
+            border: 1px solid #ccc;
+            border-radius: 5px;
+        }
+
+        .subsection-button {
+            background-color: #004d40;
+            color: #fff;
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .contenedor-imagenes {
+            display: flex;
+        }
+
+        .contenedor-imagenes img {
+            width: 23.33%;
+            height: auto;
+        }
+    </style>
+</head>
+
+<body>
+
+    <div id="encabezado">
+        <img id="logo" src="logo-carder.png" alt="Logo">
+        <h2 id="titulo">RED DEPARTAMENTAL DE JARDINES BOTÁNICOS DE RISARALDA</h2>
+    </div>
+
+    <div id="contenedor">
+        <div id="panel">
+            <p></p>
+            <div id="menu1"><a href="#menu1-section">GENERALIDADES</a></div>
+            <h2></h2>
+            <div id="menu2"><a href="#menu2-section">RED DEPARTAMENTAL DE JARDINES BOTÁNICOS DE RISARALDA</a></div>
+            <h2></h2>
+            <div id="menu3"><a href="#menu3-section">JARDINES BOTÁNICOS DE RISARALDA</a></div>
+            <h2></h2>
+            <div id="menu4"><a href="#menu4-section">DOCUMENTOS Y ENLACES DE INTERES</a></div>
+        </div>
+
+        <div id="titulos-jardines">
+            <h2>Jardines Botánicos en Risaralda</h2>
+            <div id="jardin1"><a href="#jardin1-section">Apía</a></div>
+            <p></p>
+            <div id="jardin2"><a href="#jardin2-section">Balboa</a></div>
+            <p></p>
+            <div id="jardin3"><a href="#jardin3-section">Belén de Umbría - Jardín Botánico José Celestino Mutis</a></div>
+            <p></p>
+            <div id="jardin4"><a href="#jardin4-section">Guática - Jardín Botánico Gamonrá
+                La Celia - Sabio Caldas</a></div>
+            <div id="jardin5"><a href="#jardin5-section">La Celia - Sabio Caldas</a></div>
+            <p></p>
+            <div id="jardin6"><a href="#jardin6-section">Marsella</a></div>
+            <p></p>
+            <div id="jardin7"><a href="#jardin7-section">Pereira - Jardín Botánico Universidad Tecnológica de Pereira</a></div>
+            <p></p>
+            <div id="jardin8"><a href="#jardin8-section">Pueblo Rico - Jardín Botánico Cuna de Venus del Tatamá</a></div>
+            <p></p>
+            <div id="jardin9"><a href="#jardin9-section">Quinchía - Jardín Botánico Albeiro Manco Manzo</a></div>
+            <p></p>
+            <div id="jardin10"><a href="#jardin10-section">Santa Rosa de Cabal - Proyecto Jardín Botánico UNISARC</a></div>
+            
+            <p></p>
+            <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Botón Verde Oscuro de Redirección a Google Maps</title>
+              <style>
+                  /* Estilos para el botón */
+                  .boton-verde-oscuro {
+                      display: inline-block;
+                      padding: 10px 20px;
+                      background-color: #006400; /* Verde oscuro */
+                      color: #fff; /* Texto blanco */
+                      text-decoration: none;
+                      border: none;
+                      border-radius: 5px;
+                      cursor: pointer;
+                      font-size: 16px;
+                  }
+          
+                  .boton-verde-oscuro:hover {
+                      background-color: #004d00; /* Cambia el color al pasar el ratón */
+                  }
+              </style>
+          </head>
+          <body>
+          
+              <!-- Botón con enlace a Google Maps -->
+              <a href="https://www.google.com/maps?q=Jardín Botánico Risaralda" target="_blank" class="boton-verde-oscuro">
+                  Ver Jardines Botánicos en Google Maps
+              </a>
+        </div>
+    </div>
+
+    <section id="menu1-section" class="section">
+       <h1>GENERALIDADES</h1>
+       <h3>¿Qué es un Jardín Botánico?</h3>
+       <p>Un Jardín Botánico es un espacio físico claramente delimitado en el que existen colecciones de
+        plantas vivas científicamente organizadas con fines de conservación, investigación y educación.
+        Generalmente son instituciones museísticas de carácter público, privado o mixto, con colecciones
+        de plantas vivas, y en algunos casos herborizadas, sujetas a observación y estudio por su interés
+        científico, económico y sociocultural.</p>
+        <p>La Asociación Internacional de Jardines Botánicos para la Conservación (BGCI) establece que “un
+        jardín botánico es una institución que mantiene colecciones documentadas de plantas vivas con el
+        propósito de realizar investigación científica, conservación, exhibición y educación” (Wyse Jackson,
+        1999).</p>
+
+        <h3>Normas que reglamentan los Jardines Botánicos en Colombia</h3>
+        <p>-Ver <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=5518" target="_blank">Ley 299 de 1996</a></p>
+        <p>-Ver <a href="https://www.funcionpublica.gov.co/eva/gestornormativo/norma.php?i=3279" target="_blank">Decreto 331 de 1998</a></p>
+    
+    </div>
+    </section>
+
+    <section id="menu2-section" class="section">
+        <h1>RED DEPARTAMENTAL DE JARDINES BOTÁNICOS DE RISARALDA</h1>
+        <h2>Antecedentes </h3>
+            <p>Los jardines botánicos tienen como propósito fundamental velar por la conservación, protección,
+             propagación, investigación, el conocimiento y uso sostenible de los recursos de la flora. En nuestro
+             país, estos sitios gozan de un respaldo legal que permite su creación y fortalecimiento según lo
+             establecido en la Ley 299/1996 y el Decreto 331/1998.</p>
+     <p>En el departamento de Risaralda existen 10 sitios creados y/o destinados a las labores propias de
+       un jardín Botánico, de los cuales sólo el Jardín Botánico Universidad Tecnológica de Pereira
+       (JBUTP) cumple con lo establecido en la normatividad colombiana para este tipo de centros de
+       conservación, investigación y educación.</p>
+       <p>Con el propósito de que los Jardines Botánicos existentes en el departamento de Risaralda
+         cumplan a cabalidad sus propósitos misionales la Corporación Autónoma Regional de Risaralda
+         CARDER, con el apoyo técnico y administrativo del JBUTP, vienen desarrollando acciones
+         conjuntas desde el año 2005 que buscan fortalecer los Jardines Botánicos del Departamento de
+         Risaralda y promover el trabajo articulado entre los jardines botánicos.</p>
+     <p>Para continuar con este loable propósito ambas instituciones, y en articulación con la Federación
+       Comunitaria para el Ordenamiento y Manejo de las Áreas Protegidas de Risaralda FECOMAR, se ha
+       trabajado en los últimos años en la consolidación de una Red Departamental de Jardines
+       Botánicos de Risaralda, la cual ayude a que los jardines botánicos se consoliden en su quehacer
+       misional y promueva el trabajo articulado y la gestión conjunta de programas y proyectos en pro
+       de la conservación in situ y ex situ de la biodiversidad del Departamento.</p>
+     <p>Como resultado del trabajo en red se han fortalecido las capacidades técnicas y administrativas de
+       los jardines botánicos de Risaralda, por medio de encuentros y actividades de formación, y se han
+       definido herramientas estratégicas que trazan el rumbo y definen los propósitos.</p>    
+     
+       <h2>Direccionamiento Estratégico</h3>
+       <h4>Misión</h4>
+       <p>La Red Departamental de Jardines Botánicos de Risaralda fortalece y apoya los diversos Jardines
+         Botánicos de Risaralda existentes o nuevos; realiza actividades que contribuyan a la educación
+         ambiental, la investigación científica y la conservación ambiental, en cumplimiento con la política
+         de conservación de plantas.</p>
+     <h4>Visión</h4>
+     <p>La Red Departamental de Jardines Botánicos de Risaralda para el año 2028 será un referente a
+       nivel nacional e internacional por su contribución a la conservación de la diversidad de la flora de
+       los bosques andinos del departamento de Risaralda.</p>
+     <h4>Objetivos</h4>
+     <p>Prestar a diversas entidades y personas servicios técnicos, ambientales y sociales.
+       Gestionar la articulación de los diferentes entes territoriales para la consolidación de la RDJBR.
+       Crear e implementar un banco de proyectos de la RDJBR, por medio de la formulación y gestión de
+       proyectos en conjunto con las líneas temáticas.
+       Gestionar el acompañamiento permanente por parte de los entes territoriales al proceso de
+       consolidación y legalización de los jardines botánicos del departamento de Risaralda.
+       Fortalecer los procesos de los jardines botánicos de Risaralda en las líneas temáticas priorizadas.
+       Gestionar alianzas público privadas para el apoyo en los proyectos que surjan de la RDJBR.</p>
+     
+       <h4>Líneas temáticas estratégicas</h4>
+       <p>1. Difusión de la educación ambiental.</p>
+         <p>2. Conservación In situ y Ex situ.</p>
+           <p>3. Investigación básica y aplicada.</p>
+             <p>4. Preservación y divulgación del patrimonio cultural.</p>
+               <p> 5. Adaptación y mitigación al cambio climático.</p>
+                 <p> 6. Gestión integral del recurso hídrico.</p>
+                   <p> 7. Ecoturismo.</p>
+                     <p> 8. Viveros forestales y ornamentales.</p>
+     
+     </div>
+   
+    </section>
+
+    <section id="menu3-section" class="section">
+        <h1>JARDINES BOTÁNICOS</h2>
+       
+    <div id="jardin1">
+        <h2>Apía</h2>
+
+             
+                <p>El Jardín Botánico de Apía tiene un área aproximada de 1,8 hectáreas, se localiza a 600 de la plaza
+            principal de Apía, municipio ubicado en la vertiente oriental de la Cordillera Occidental colombiana a
+            65 km al norte de Pereira aproximadamente, a una altitud y temperatura media de 1630 msnm y 20°C
+            respectivamente.</p>
+            <p>Fue creado por el acuerdo del concejo municipal número 020 del 27 de noviembre de 1987 y se
+            destinó como un área de conservación y clasificación de plantas nativas de la región, con fines
+            didácticos, científicos y ornamentales. Durante varios años se realizaron actividades aisladas de
+            conservación y educación ambiental en el sitio, pero en la actualidad se ha aumentado en el número
+            de individuos y especies de flora, gracias a la figura de administración bajo comodato con la ONG
+            Municipal Vida Silvestre.</p>
+            <p>En El Jardín Botánico de Apía se pueden observar individuos de flora de más de 70 especies,
+            principalmente de las familias fabaceae, melastomataceae, solanaceae, rubiaceae, arecaceae y
+            poaceae, también es un espacio ideal para el avistamiento de aves y, aunque no existe un inventario
+            de fauna actualizado, existen indicios de la presencia o paso por el lugar de pequeños mamíferos
+            como zarigüellas, comadrejas, ardillas, zorritos, y anfibios y reptiles de menor tamaño.</p>
+               
+              <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title>Tres Fotos Horizontales</title>
+              <style>
+                .contenedor-imagenes {
+                  display: flex;
+                }
+            
+            
+                .contenedor-imagenes img {
+                  width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+                  height: auto;
+                }
+              </style>
+            </head>
+            <body>
+            
+            
+            <div class="contenedor-imagenes">
+               <img src="A-1.jpg" alt="Imagen 1">
+              <img src="A-2.jpg" alt="Imagen 2">
+              <img src="A-3.jpg" alt="Imagen 3">
+              <img src="A-4.jpg" alt="Imagen 4">
+            </div>
+            
+            
+             <button class="subsection-button" onclick="toggleSubsection('fotosJardin1')">Ver más fotos</button>
+                <div id="fotosJardin1" class="subsection">
+                   
+                    <head>
+              <meta charset="UTF-8">
+              <meta name="viewport" content="width=device-width, initial-scale=1.0">
+              <title> Fotos Horizontales</title>
+              <style>
+                .contenedor-imagenes {
+                  display: flex;
+                }
+            
+            
+                .contenedor-imagenes img {
+                  width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+                  height: auto;
+               
+                }
+               </style>
+            </head>
+            <body>
+            <div class="contenedor-imagenes">
+              <img src="A-5.jpg" alt="Imagen 1">
+              <img src="A-6.jpg" alt="Imagen 2">
+              <img src="A-7.jpg" alt="Imagen 3">
+              <img src="A-8.jpg" alt="Imagen 4">
+            </div>
+        
+             
+            </div>
+            </body>
+            </div>
+            </section>
+        
+<section>
+    
+    <section id="jardin2-section" class="section">
+        <h2>Balboa</h2>
+      
+        <p>El Jardín Botánico de Balboa tiene un área aproximada de 1,5 hectáreas, se ubica a 500 metros de la
+    plaza principal de Balboa, municipio ubicado en la vertiente oriental de la Cordillera Occidental
+    colombiana a 50 km al noroccidente de Pereira aproximadamente, a una altitud y temperatura media
+    de 1530 msnm y 22°C respectivamente.</p>
+    
+    
+    <p>Creado mediante acuerdo del concejo municipal número 034 del 27 de mayo de 1998, se destinó a la
+    recolección, conservación y clasificación taxonómica de plantas nativas y exóticas con el fines
+    didácticos, científicos y turísticos. Entre los años 2013-2014 se inicia un proceso de acompañamiento
+    y apoyo directo de CARDER a través del POA de Áreas Protegidas con actividades puntuales como:
+    Embellecimiento de senderos, fortalecimiento del vivero de propagación de especies forestales
+    nativas, talleres de capacitación a comunidad educativa del municipio, intercambio de experiencias,
+    educación ambiental dirigida a comunidad en general, jornadas de siembra, recuperación de
+    infraestructura e inventario forestal.</p>
+    
+    
+    <p>En los senderos del Jardín Botánico de Balboa se pueden observar individuos de flora de más
+    encontraron 23 Familias, 40 géneros y 45 especies, también se han visto algunas especies de aves,
+    pequeños mamíferos como comadrejas, ardillas, zorritos, y anfibios y reptiles de menor tamaño.</p>
+    
+    
+                <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tres Fotos Horizontales</title>
+      <style>
+        .contenedor-imagenes {
+          display: flex;
+        }
+    
+    
+        .contenedor-imagenes img {
+          width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+          height: auto;
+        }
+      </style>
+    </head>
+    <body>
+    
+    
+    <div class="contenedor-imagenes">
+      <img src="B-1.jpg" alt="Imagen 1">
+      <img src="B-2.jpg" alt="Imagen 2">
+      <img src="B-3.jpg" alt="Imagen 3">
+       <img src="B-4.jpg" alt="Imagen 4">
+    </div>
+             
+    
+    
+    <button class="subsection-button" onclick="toggleSubsection('fotosJardin2')">Ver más fotos</button>
+    <div id="fotosJardin2" class="subsection">
+           
+            <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Fotos Horizontales</title>
+      <style>
+        .contenedor-imagenes {
+          display: flex;
+        }
+    
+    
+        .contenedor-imagenes img {
+          width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+          height: auto;
+       
+        }
+     </style>
+    </head>
+    <body>
+    <div class="contenedor-imagenes">
+       <img src="B-5.jpg" alt="Imagen 1">
+      <img src="B-6.jpg" alt="Imagen 2">
+      <img src="B-7.jpg" alt="Imagen 3">
+       <img src="B-8.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+        <img src="B-9.jpg" alt="Imagen 1">
+      <img src="B-10.jpg" alt="Imagen 2">
+      <img src="B-11.jpg" alt="Imagen 3">
+       <img src="B-12.jpg" alt="Imagen 4">
+       </div>
+    <div class="contenedor-imagenes">
+           <img src="B-13.jpg" alt="Imagen 1">
+      <img src="B-14.jpg" alt="Imagen 2">
+      <img src="B-15.jpg" alt="Imagen 3">
+       <img src="B-16.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+      <img src="B-17.jpg" alt="Imagen 1">
+      <img src="B-18.jpg" alt="Imagen 2">
+      <img src="B-19.jpg" alt="Imagen 3">
+       <img src="B-20.jpg" alt="Imagen 4">
+        </div>    
+    
+    
+    <div class="contenedor-imagenes">
+      <img src="B-21.jpg" alt="Imagen 1">
+      <img src="B-22.jpg" alt="Imagen 2">
+      </div>
+
+</section>
+
+
+
+    <section id="jardin3-section" class="section">
+        <h2>Belén de Umbría - Jardín Botánico José Celestino Mutis</h2>
+      
+        <p>El Jardín Botánico José Celestino Mutis cuenta con un área aproximada de 2,8 hectáreas y se
+          localiza a 1 km de la plaza principal de Belén de Umbría, municipio ubicado en la vertiente oriental
+          de la Cordillera Occidental colombiana a aproximadamente 70 km al norte de Pereira, a una
+          altitud y temperatura medias de 1620 msnm y 23°C respectivamente.</p>
+      <p>Fue creado mediante acuerdo del concejo municipal número 089 marzo 13 de 1987, se destinó a
+        la recolección, conservación y clasificación de plantas nativas de le región con el fines didácticos,
+        científicos, estéticos y de protección del medio ambiente. Durante años estuvo a cargo de una
+        ONG ambiental del municipio, periodo en el que fue enriquecida la colección de plantas vivas. En
+        la actualidad, el Jardín funciona como área de conservación de algunas especies vegetales y
+        animales, se encuentra en proceso de renovación de infraestructura y está a cargo de
+        administración municipal.</p>
+        <p>En el Jardín Botánico José Celestino Mutis de Belén de Umbría se pueden observar individuos de
+          flora de más de 50 familias y 70 especies, al igual que especies de aves, pequeños mamíferos,
+          anfibios y reptiles de menor tamaño.</p>
+          <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tres Fotos Horizontales</title>
+      <style>
+        .contenedor-imagenes {
+          display: flex;
+        }
+    
+        .contenedor-imagenes img {
+          width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+          height: auto;
+        }
+      </style>
+    </head>
+    <body>
+    
+    <div class="contenedor-imagenes">
+      <img src="BU-1.jpg" alt="Imagen 1">
+      <img src="BU-2.jpg" alt="Imagen 2">
+      <img src="BU-3.jpg" alt="Imagen 3">
+      <img src="BU-4.jpg" alt="Imagen 4">
+    </div>
+    
+    </body>   
+    
+     <button class="subsection-button" onclick="toggleSubsection('fotosJardin2')">Ver más fotos</button>
+        <div id="fotosJardin1" class="subsection">
+           
+            <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title> Fotos Horizontales</title>
+      <style>
+        .contenedor-imagenes {
+          display: flex;
+        }
+    
+        .contenedor-imagenes img {
+          width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+          height: auto;
+        
+        }
+       </style>
+    </head>
+    
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Jardines Botánicos de Risaralda</title>
+    
+        <style>
+            /* Tu código CSS existente */
+    
+            .contenedor-imagenes {
+                display: flex;
+                margin-bottom: 20px; /* Agrega margen inferior entre las divisiones */
+            }
+    
+            .contenedor-imagenes img {
+                width: 23.33%;
+                height: auto;
+                margin-right: 10px; /* Agrega margen derecho entre las imágenes */
+            }
+    
+            /* Agrega este estilo para la última imagen en cada fila */
+            .contenedor-imagenes img:last-child {
+                margin-right: 0; /* Elimina el margen derecho para la última imagen */
+            }
+        </style>
+    </head>
+    <body>
+    <div class="contenedor-imagenes">
+      <img src="BU-5.jpg" alt="Imagen 1">
+      <img src="BU-6.jpg" alt="Imagen 2">
+      <img src="BU-7.jpg" alt="Imagen 3">
+      <img src="BU-8.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+     <img src="BU-9.jpg" alt="Imagen 1">
+      <img src="BU-10.jpg" alt="Imagen 2">
+      <img src="BU-11.jpg" alt="Imagen 3">
+      <img src="BU-12.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+    <img src="BU-13.jpg" alt="Imagen 1">
+      <img src="BU-14.jpg" alt="Imagen 2">
+      <img src="BU-15.jpg" alt="Imagen 3">
+      <img src="BU-16.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+    <img src="BU-17.jpg" alt="Imagen 1">
+      <img src="BU-18.jpg" alt="Imagen 2">
+      <img src="BU-19.jpg" alt="Imagen 3">
+      <img src="BU-20.jpg" alt="Imagen 4">
+    </div>
+                <div class="contenedor-imagenes">
+    <img src="BU-21.jpg" alt="Imagen 1">
+      <img src="BU-22.jpg" alt="Imagen 2">
+    </section>
+
+
+        <section id="jardin4-section" class="section">
+            <h2>Guática - Jardín Botánico Gamonrá</h2>
+            <p>El Jardín Botánico Gamonrá tiene un área aproximada de 12 hectáreas, se localiza a 1 Km de la cabecera municipal de Guática, municipio ubicado en la vertiente oriental de la Cordillera Occidental colombiana a 90 km al norte de Pereira, a una altitud y temperatura media de 1820 msnm y 20°C respectivamente. </p>
+            <p>Fue creado como Jardín Botánico para promover la conservación de la biodiversidad, el agua y el suelo y la educación ambiental, pero a través de los años ha adquirido vocación de lugar de esparcimiento y recreación.</p>
+            <p>Sin embargo, la Alcaldía Municipal oficializó su creación como Jardín Botánico mediante Resolución 010 del 30 de enero de 2007. Cuenta con una zona que tiene una importante variedad de plantas de diferentes especies y con un sendero por el cual se puede recorrer toda el área, tanto la dedicada a la conservación de especies de flora, como la destinada a recreación, esparcimiento y turismo de naturaleza.</p>
+                <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Tres Fotos Horizontales</title>
+            <style>
+              .contenedor-imagenes {
+                display: flex;
+              }
+          
+          
+              .contenedor-imagenes img {
+                width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+                height: auto;
+              }
+           
+           
+           
+            </style>
+          </head>
+          <body>
+          
+          
+          <div class="contenedor-imagenes">
+            <img src="G-1.jpg" alt="Imagen 1">
+            <img src="G-2.jpg" alt="Imagen 2">
+            <img src="G-3.jpg" alt="Imagen 3">
+             <img src="G-4.jpg" alt="Imagen 4">
+          </div>
+          
+          
+          
+          
+          <button class="subsection-button" onclick="toggleSubsection('fotosJardin4')">Ver más fotos</button>
+              <div id="fotosJardin4" class="subsection">
+                 
+                  <head>
+            <meta charset="UTF-8">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title> Fotos Horizontales</title>
+            <style>
+              .contenedor-imagenes {
+                display: flex;
+              }
+          
+          
+              .contenedor-imagenes img {
+                width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+                height: auto;
+             
+              }
+            </style>
+          </head>
+          <body>
+          
+          
+          <div class="contenedor-imagenes">
+            <img src="G-5.jpg" alt="Imagen 1">
+            <img src="G-6.jpg" alt="Imagen 2">
+            <img src="G-7.jpg" alt="Imagen 3">
+            <img src="G-8.jpg" alt="Imagen 4">
+          </div>
+          <div class="contenedor-imagenes">
+            <img src="G-9.jpg" alt="Imagen 1">
+            <img src="G-10.jpg" alt="Imagen 2">
+            <img src="G-11.jpg" alt="Imagen 3">
+            <img src="jardin-celia3.jpg" alt="Imagen 4">
+          </div>
+          <div class="contenedor-imagenes">
+            <img src="G-12.jpg" alt="Imagen 1">
+            <img src="G-13.jpg" alt="Imagen 2">
+            <img src="G-14.jpg" alt="Imagen 3">
+            <img src="G-15.jpg" alt="Imagen 4">
+          </div>
+          <div class="contenedor-imagenes">
+            <img src="G-16.jpg" alt="Imagen 1">
+            <img src="G-17.jpg" alt="Imagen 2">
+            <img src="G-18.jpg" alt="Imagen 3">
+            <img src="G-19.jpg" alt="Imagen 4">
+          </div>
+          <div class="contenedor-imagenes">
+            <img src="G-20.jpg" alt="Imagen 1">
+          </div>
+        </section>
+
+
+        <section id="jardin5-section" class="section">
+            <h2>La Celia, Jardín Botánico Sabio Caldas</h2>
+            <p>El Jardín Botánico Sabio Caldas tiene un área aproximada de 25.600 m2, se localiza a 300 metros
+              de la plaza principal de La Celia, municipio ubicado en la vertiente oriental de la Cordillera
+              Occidental aproximadamente a 67 Km al noroccidente de Pereira, a una altitud y temperatura
+              media de 1380 msnm y 22°C respectivamente.</p>
+            <p>Fue creado, al igual que otros jardines botánicos de Risaralda, para promover la conservación de
+              la biodiversidad, el agua y el suelo y la educación ambiental, pero con el tiempo ha adquirido
+              vocación de lugar de esparcimiento y recreación, sobre todo para los niños por sus juegos
+              infantiles y cercanía al coliseo y la plaza principal.</p>
+  <p>Cuenta con una pequeña variedad de plantas de diferentes especies, un sendero por el cual se
+    puede recorrer toda el área y disfrutar de una oferta ambiental en la que se destaca la variedad de
+    flora presente en el área. Una identificación preliminar permitió establecer que existen al menos
+    75 especies de más de 70 géneros y 40 familias.</p>
+  
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tres Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+        
+            .contenedor-imagenes img {
+              width: 50.33%; /* Cada imagen ocupa el 30.33% del ancho del contenedor */
+              height: auto;
+            }
+          </style>
+        </head>
+        <body>
+        
+        
+        <div class="contenedor-imagenes">
+          <img src="LC-1.jpg" alt="Imagen 1">
+          <img src="LC-2.jpg" alt="Imagen 2">
+          <img src="LC-3.jpg" alt="Imagen 2">
+          <img src="LC-4.jpg" alt="Imagen 3">
+         
+        </div>
+        
+        
+        </body>  
+         <button class="subsection-button" onclick="toggleSubsection('fotosJardin5')">Ver más fotos</button>
+            <div id="fotosJardin5" class="subsection">
+               
+                <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+        
+            .contenedor-imagenes img {
+              width: 50%; /* Cada imagen ocupa el 50% del ancho del contenedor */
+              height: auto;
+            }
+          </style>
+        </head>
+        <body>
+        
+        
+        <div class="contenedor-imagenes">
+          <img src="LC-6.jpg" alt="Imagen 2">
+          <img src="LC-7.jpg" alt="Imagen 3">
+          <img src="LC-8.jpg" alt="Imagen 4">
+          <img src="LC-9.jpg" alt="Imagen 1">
+        </div>
+        <div class="contenedor-imagenes">
+          <img src="LC-10.jpg" alt="Imagen 2">
+          <img src="LC-12.jpg" alt="Imagen 4">
+          <img src="LC-13.jpg" alt="Imagen 1">
+          <img src="LC-15.jpg" alt="Imagen 3">
+        </div>
+        <div class="contenedor-imagenes">
+         
+          <img src="LC-16.jpg" alt="Imagen 4">
+           <img src="LC-17.jpg" alt="Imagen 1">
+          <img src="LC-18.jpg" alt="Imagen 2">
+          <img src="LC-20.jpg" alt="Imagen 3">
+        </div>
+        <div class="contenedor-imagenes">
+         
+        
+        
+        </div>
+        <div class="contenedor-imagenes">
+          <img src="LC-22.jpg" alt="Imagen 1">
+          <img src="LC-23.jpg" alt="Imagen 2">
+          <img src="LC-24.jpg" alt="Imagen 3">
+        
+        
+        </div>
+        </section>
+
+
+        <section id="jardin6-section" class="section">
+  <h2>Marsella</h2>
+      
+   
+      <p>El Jardín Botánico de Marsella se encuentra localizado dentro de la cabecera municipal,
+        aproximadamente 30 km al norte de Pereira, su área es en su mayoría montañosa, y pertenece a
+        la vertiente occidental de la cordillera Central, con una altitud de 1510 msnm y una temperatura
+        media de 21°C.</p>
+        <p>Fue fundado mediante el acuerdo del concejo municipal N° 004 del 15 de diciembre de 1979 en
+          un área de 4.6 Ha. donde anteriormente funcionaba el Parque Infantil, y sus funciones principales
+          eran integrar los servicios de dicho parque con las del jardín botánico mediante la conservación y
+          clasificación de plantas nativas de la región con fines didácticos científicos y estéticos.</p>
+     <p>El Jardín Botánico tuvo su época de esplendor y mayor reconocimiento a finales de la década de
+      los 80 (después de ser premiado Marsella con el título de municipio verde de Colombia) y finales
+      de los años 90, logrando captar y reinvertir importantes recursos económicos gracias a la entrada
+      de los turistas, y a un innovador parque de juegos tecnológicos amigables con el medio ambiente.</p>
+    <p>Mediante acuerdo del concejo municipal 025 el 21 de agosto de 2004, se modificó el acuerdo de
+      creación y se destinó a la conservación y clasificación de plantas nativas de le región con el fines
+      didácticos, científicos y estéticos.</p>
+    
+      <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Fotos Horizontales</title>
+    <style>
+      .contenedor-imagenes {
+        display: flex;
+      }
+  
+  
+      .contenedor-imagenes img {
+        width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+        height: auto;
+      }
+    </style>
+  </head>
+  <body>
+  
+  
+  <div class="contenedor-imagenes">
+     <img src="UNO.jpg" alt="Imagen 1">
+    <img src="DOS.jpg" alt="Imagen 2">
+    <img src="TRES.jpg" alt="Imagen 3">
+    <img src="CUATRO.jpg" alt="Imagen 4">
+  </div>
+  
+  
+   <button class="subsection-button" onclick="toggleSubsection('fotosJardin6')">Ver más fotos</button>
+      <div id="fotosJardin6" class="subsection">
+         
+          <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotos Horizontales</title>
+    <style>
+      .contenedor-imagenes {
+        display: flex;
+      }
+  
+  
+      .contenedor-imagenes img {
+        width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+        height: auto;
+     
+      }
+     </style>
+  </head>
+  <body>
+  <div class="contenedor-imagenes">
+    <img src="CINCO.jpg" alt="Imagen 1">
+    <img src="6.jpg" alt="Imagen 2">
+    <img src="7.jpg" alt="Imagen 3">
+    <img src="8.jpg" alt="Imagen 4">
+  </div>
+  <div class="contenedor-imagenes">
+    <img src="9.jpg" alt="Imagen 1">
+    <img src="10.jpg" alt="Imagen 2">
+    <img src="11.jpg" alt="Imagen 3">
+    <img src="12.jpg" alt="Imagen 4">
+  </div>
+    <div class="contenedor-imagenes">
+    <img src="13.jpg" alt="Imagen 1">
+   
+  </div>
+        </section>
+
+        <section id="jardin7-section" class="section">
+            <h2>Pereira, Jardín Botánico Universidad Tecnológica de Pereira</h2>
+            <p>La Universidad Tecnológica de Pereira (UTP) en la década de los años 70 inició la conformación del
+              Jardín Botánico Silvestre (JBUTP) mediante la siembra de flora nativa en terrenos que habían
+              desarrollado un proceso de sucesión natural y para los cuales, el Consejo Superior de la Institución
+              legitimó el proceso con la resolución 020 de 1983 para un área aproximada de 12.7 hectáreas del
+              campus universitario. En 1999 el JBUTP inició una nueva fase de desarrollo, auspiciada por la
+              Rectoría y la Vicerrectoría Administrativa de la institución, que le permitió obtener el concepto
+              técnico de favorable como Jardín Botánico por parte del Instituto de Investigación de Recursos
+              Biológicos &quot;Alexander von Humboldt&quot; (IAvH) y posteriormente el Permiso Ambiental de
+              Funcionamiento con Resolución 0468 de 2000 de la Corporación Autónoma Regional de Risaralda
+              CARDER. En ese mismo año, ingresó a la Red Nacional de Jardines Botánicos de Colombia (RNJBC).</p>
+              <p>Desde entonces, el JBUTP ha desarrollado, a través de sus programas de conservación,
+                investigación y educación, importantes acciones en pro de la diversidad biológica con
+                comunidades locales y regionales, y entidades nacionales e internacionales. También se ha
+                transformado en un escenario educativo y turístico, que pretende concienciar a diferentes
+                públicos en torno a la conservación, manejo y aprovechamiento sostenible de nuestro patrimonio
+                natural y cultural.</p>
+                <p><a href="https://www.utp.edu.co/jardin/" target="_blank">Más información del JBUTP</a></p>
+      
+            <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tres Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+        
+            .contenedor-imagenes img {
+              width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+              height: auto;
+            }
+          </style>
+        </head>
+        <body>
+        
+        
+        <div class="contenedor-imagenes">
+          <img src="JBP-1.jpg" alt="Imagen 1">
+          <img src="JBP-2.jpg" alt="Imagen 2">
+          <img src="JBP-3.jpg" alt="Imagen 3">
+          <img src="JBP-4.jpg" alt="Imagen 4">
+        </div>
+        
+        
+        </body>  
+        
+        
+         <button class="subsection-button" onclick="toggleSubsection('fotosJardin7')">Ver más fotos</button>
+            <div id="fotosJardin7" class="subsection">
+               
+                <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+        
+            .contenedor-imagenes img {
+              width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+              height: auto;
+           
+            }
+           </style>
+        </head>
+        <body>
+        <div class="contenedor-imagenes">
+          <img src="JBP-5.jpg" alt="Imagen 1">
+          <img src="JBP-6.jpg" alt="Imagen 2">
+          <img src="JBP-7.jpg" alt="Imagen 3">
+          <img src="JBP-8.jpg" alt="Imagen 4">
+        </div>
+        <div class="contenedor-imagenes">
+         <img src="JBP-9.jpg" alt="Imagen 1">
+          <img src="JBP-10.jpg" alt="Imagen 2">
+          <img src="JBP-11.jpg" alt="Imagen 3">
+          <img src="JBP-12.jpg" alt="Imagen 4">
+        </div>
+        <div class="contenedor-imagenes">
+        <img src="JBP-13.jpg" alt="Imagen 1">
+          <img src="JBP-14.jpg" alt="Imagen 2">
+        </div>
+        </section>
+
+        <section id="jardin8-section" class="section">
+            <h2>Pueblo Rico</h2>
+            <p>El Jardín Botánico Cuna de Venus del Tatamá se encuentra localizado aproximadamente a 2 km de
+              la cabecera municipal de Pueblo Rico, municipio de Risaralda ubicado a aproximadamente 95 km
+              al noroeste de Pereira, en la vertiente oriental de la cordillera occidental, a una altitud de 1560
+              msnm y con temperatura promedio de 20°C.</p>
+              <p>La vegetación presente en el sitio proviene de regeneración natural de especies de esta zona del
+                departamento y de algunos individuos que han sido sembrados. Actualmente está cargo de la
+                Institución Educativa San Pablo y de la Asociación de Interpretes Ambientales Paimadó.</p>
+      <p>Al recorrer el Jardín Botánico Cuna de Venus del Tatamá se pueden observar 70 especies
+        diferentes de flora, correspondientes a 41 familias y 60 géneros.</p>
+        <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title>Tres Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+            .contenedor-imagenes img {
+              width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+              height: auto;
+            }
+          </style>
+        </head>
+        <body>
+        
+        <div class="contenedor-imagenes">
+          <img src="P-1.jpg" alt="Imagen 1">
+          <img src="P-2.jpg" alt="Imagen 2">
+          <img src="P-3.jpg" alt="Imagen 3">
+           <img src="P-4.jpg" alt="Imagen 4">
+        </div>
+           
+          
+          
+        
+        <button class="subsection-button" onclick="toggleSubsection('fotosJardin8')">Ver más fotos</button>
+            <div id="fotosJardin8" class="subsection">
+               
+                <head>
+          <meta charset="UTF-8">
+          <meta name="viewport" content="width=device-width, initial-scale=1.0">
+          <title> Fotos Horizontales</title>
+          <style>
+            .contenedor-imagenes {
+              display: flex;
+            }
+        
+            .contenedor-imagenes img {
+              width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+              height: auto;
+            
+            }
+          </style>
+         </head>
+        
+        <body>
+        
+        <div class="contenedor-imagenes">
+           <img src="P-7.jpg" alt="Imagen 1">
+          <img src="P-6.jpg" alt="Imagen 2">
+          <img src="P-7.jpg" alt="Imagen 3">
+           <img src="P-8.jpg" alt="Imagen 4">
+        </div>
+        <div class="contenedor-imagenes">
+           <img src="P-9.jpg" alt="Imagen 1">
+          <img src="P-10.jpg" alt="Imagen 2">
+          <img src="P-11.jpg" alt="Imagen 3">
+           <img src="P-12.jpg" alt="Imagen 4">
+           </div>
+        <div class="contenedor-imagenes">
+           <img src="P-12.jpg" alt="Imagen 1">
+        
+        </div>
+        </section>
+
+        <section id="jardin9-section" class="section">
+            <h2>Quinchía - Jardín Botánico Albeiro Manco Manzo</h2>
+            <p>El Jardín Botánico Albeiro Manco Manzo tiene un área aproximada de 9600 m2, se localiza a 1,8
+              Km de la cabecera municipal de Quinchía, municipio ubicado en la vertiente oriental de la
+              Cordillera Occidental colombiana a 100 km al norte de Pereira aproximadamente, a una altitud y
+              temperatura media de 1825 msnm y 18°C respectivamente.</p>
+    <p>Fue fundado el 11 de agosto de 1979 como un vivero forestal con la idea de propagar especies
+      nativas y promover la conservación de la biodiversidad, el agua y el suelo. Posteriormente, al
+      sembrarse gran variedad de plantas de diferentes especies y construirse un sendero que recorre
+      toda su área, fue nombrado como Jardín Botánico. Es importante destacar que gran parte del
+      aumento en el número de individuos y especies de flora se debe al trabajo realizado con enorme
+      sentido de pertenencia por más de 30 años por el señor Albeiro Manco Manzo, labor que fue
+      reconocida por el Concejo Municipal otorgándole su nombre al Jardín Botánico.</p>
+    <p>Durante varios años se realizaron actividades de conservación, investigación aplicada (vivero) y
+      educación ambiental en el sitio, lo que motivo al Concejo Municipal a crearlo oficialmente como
+      Jardín Botánico mediante Acuerdo número 011 del 2000. Actualmente su administración está en
+      proceso de entrega bajo la figura de comodato a una ONG Ambiental del municipio.</p>
+    <p>El Jardín Botánico Albeiro Manco Manzo cuenta con una importante oferta ambiental,
+      destacándose principalmente la gran diversidad de flora en un área relativamente pequeña. Una
+      identificación preliminar permite establecer que existen al menos 150 especies de más de 100
+      géneros y 60 familias.</p>
+    
+         <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tres Fotos Horizontales</title>
+        <style>
+          .contenedor-imagenes {
+            display: flex;
+          }
+      
+      
+          .contenedor-imagenes img {
+            width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+            height: auto;
+          }
+        </style>
+      </head>
+      <body>
+      
+      
+      <div class="contenedor-imagenes">
+         <img src="Q-1.jpg" alt="Imagen 2">
+        <img src="Q-2.jpg" alt="Imagen 2">
+        <img src="Q-3.jpg" alt="Imagen 3">
+        <img src="Q-4.jpg" alt="Imagen 4">.
+      
+      </div>
+      
+  <button class="subsection-button" onclick="toggleSubsection('fotosJardin9')">Ver más fotos</button>
+  <div id="fotosJardin9" class="subsection">
+     
+      <head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title> Fotos Horizontales</title>
+<style>
+  .contenedor-imagenes {
+    display: flex;
+  }
+
+
+  .contenedor-imagenes img {
+    width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+    height: auto;
+ 
+  }
+ </style>
+</head>
+<body>
+<div class="contenedor-imagenes">
+<img src="Q-5.jpg" alt="Imagen 1">
+<img src="Q-6.jpg" alt="Imagen 2">
+<img src="Q-7.jpg" alt="Imagen 3">
+<img src="Q-8.jpg" alt="Imagen 4">
+</div>
+<div class="contenedor-imagenes">
+<img src="Q-9.jpg" alt="Imagen 1">
+<img src="Q-10.jpg" alt="Imagen 2">
+<img src="Q-11.jpg" alt="Imagen 3">
+<img src="Q-12.jpg" alt="Imagen 4">
+</div>
+<div class="contenedor-imagenes">
+<img src="Q-13.jpg" alt="Imagen 1">
+<img src="Q-14.jpg" alt="Imagen 2">
+<img src="Q-15.jpg" alt="Imagen 3">
+<img src="Q-16.jpg" alt="Imagen 4">
+</div>
+<div class="contenedor-imagenes">
+<img src="Q-17.jpg" alt="Imagen 1">
+<img src="Q-18.jpg" alt="Imagen 2">
+<img src="Q-19.jpg" alt="Imagen 3">
+<img src="Q-20.jpg" alt="Imagen 4">
+</div>
+     <div class="contenedor-imagenes">
+<img src="Q-21.jpg" alt="Imagen 1">
+<img src="Q-22.jpg" alt="Imagen 2">
+
+
+</div>    
+        </section>
+
+       <section id="jardin10-section" class="section">
+        <h2>Santa Rosa de Cabal - Proyecto Jardín Botánico UNISARC</h2>
+        <p>El Proyecto Jardín Botánico UNISARC es una iniciativa institucional de la Corporación Universitaria
+          Santa Rosa de Cabal UNISARC liderada por el Grupo de Investigación en Biología de la
+          conservación y Biotecnología, que tiene como misión aportar al conocimiento y conservación de
+          las plantas silvestres y cultivadas del paisaje rural cafetero de Risaralda, las cuales son importantes
+          para el desarrollo social y económico de la región, a través de la promoción de actividades de
+          investigación, docencia y proyección social.</p>
+    <p>El jardín Botánico UNISARC está ubicado en la Granja La María, a 2 km del casco urbano de Santa
+      Rosa de Cabal. El área destinada a la conservación es de 5,6 hectáreas e incluye zonas con
+      colección etnobotánica, colección de bosque subandino, arboreto y agroecosistema cafetero, los
+      cuales se pueden recorrer a través de un sendero de 1100 metros aproximadamente.</p>
+    <p>El Jardín Botánico UNISARC cuenta con gran diversidad de flora, de al menos 150 especies de más
+      de 100 géneros y 60 familias.</p>
+    
+     <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tres Fotos Horizontales</title>
+    <style>
+      .contenedor-imagenes {
+        display: flex;
+      }
+    
+    
+      .contenedor-imagenes img {
+        width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+        height: auto;
+      }
+    </style>
+    </head>
+    <body>
+    
+    
+    <div class="contenedor-imagenes">
+     <img src="JBP-1.jpg" alt="Imagen 2">
+    <img src="JBP-2.jpg" alt="Imagen 2">
+    <img src="JBP-3.jpg" alt="Imagen 3">
+    <img src="JBP-4.jpg" alt="Imagen 4">.
+    
+    
+    </div>
+    
+    
+    <button class="subsection-button" onclick="toggleSubsection('fotosJardin10')">Ver más fotos</button>
+      <div id="fotosJardin10" class="subsection">
+         
+          <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Fotos Horizontales</title>
+    <style>
+      .contenedor-imagenes {
+        display: flex;
+      }
+    
+    
+      .contenedor-imagenes img {
+        width: 23.33%; /* Cada imagen ocupa el 23.33% del ancho del contenedor */
+        height: auto;
+     
+      }
+     </style>
+    </head>
+    <body>
+    <div class="contenedor-imagenes">
+    <img src="JBP-5.jpg" alt="Imagen 1">
+    <img src="JBP-6.jpg" alt="Imagen 2">
+    <img src="JBP-7.jpg" alt="Imagen 3">
+    <img src="JBP-8.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+    <img src="JBP-9.jpg" alt="Imagen 1">
+    <img src="JBP-10.jpg" alt="Imagen 2">
+    <img src="JBP-11.jpg" alt="Imagen 3">
+    <img src="JBP-12.jpg" alt="Imagen 4">
+    </div>
+    <div class="contenedor-imagenes">
+    <img src="JBP-13.jpg" alt="Imagen 1">
+    <img src="JBP-14.jpg" alt="Imagen 2">
+    
+    </div>
+    
+</section>
+
+
+
+<section id="menu4-section" class="section">
+ <h1>DOCUMENTOS Y ENLACES DE INTERES</h1>
+     
+
+
+ <div class="documents">
+     <div class="document">
+         <h3>1</h3>
+
+
+ <p>Plan de Accion Estrategia Nacional para Conservación de Plantas 2017 </p>
+
+         <embed src="Plan de Accion Estrategia Nacional para Conservación de Plantas 2017.pdf" type="application/pdf" width="600" height="400">
+     </div>
+
+
+     <div class="document">
+<h3>2</h3>
+         <p>Manual de la BGCI en planificación, desarrollo y manejo de jardines botánicos, 2019. BGCI - De la idea a la realización</p>
+         <embed src="Manual de la BGCI en planificación, desarrollo y manejo de jardines botánicos, 2019. BGCI - De la idea a la realización.pdf" type="application/pdf" width="600" height="400">
+     </div>
+<div class="document">
+ <h3>3</h3>
+         <p>Educacion Ambiental en Jardines Botanicos - BGCI</p>
+         <embed src="Educacion Ambiental en Jardines Botanicos - BGCI.pdf" type="application/pdf" width="600" height="400">
+     </div>
+
+
+<div class="document">
+ <h3>4</h3>
+         <p>BGCI - Revisión Técnica Definición de un Jardín Botánico y cómo medir el funcionamiento y la gestión, 2017</p>
+         <embed src="BGCI - Revisión Técnica Definición de un Jardín Botánico y cómo medir el funcionamiento y la gestión, 2017.pdf" type="application/pdf" width="600" height="400">
+     </div>
+
+
+<div class="document">
+   <h3>5</h3>
+         <p>Estrategia Nacional para Conservación de Plantas 2010 - Actualizacion y avances</p>
+         <embed src="Estrategia Nacional para Conservación de Plantas 2010 - Actualizacion y avances.pdf" type="application/pdf" width="600" height="400">
+     </div>
+
+ </div>
+</div>
+</section>
+
+
+<script>
+ function toggleNav() {
+     const sidePanel = document.getElementById('sidePanel');
+     const main = document.getElementById('main');
+     if (sidePanel.style.left === "-250px") {
+         sidePanel.style.left = "0";
+         main.style.marginLeft = "250px";
+     } else {
+         sidePanel.style.left = "-250px";
+         main.style.marginLeft = "0";
+     }
+ }
+</script>
+
+
+
+
+
+
+<section>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<style>
+ body {
+     font-family: Arial, sans-serif;
+     margin: 0;
+     padding: 0;
+ }
+
+
+ h1 {
+     text-align: center; /* Centrar el texto */
+     background-image: url('trebol.jpg'); /* Ruta a tu imagen de trebol */
+     background-size: cover; /* Ajustar la imagen para cubrir el fondo */
+     color: white; /* Color del texto */
+     padding: 10px; /* Añadir espacio alrededor del texto */
+ }
+</style>
+</head>
+<body>
+
+</section>
+
+<section>
+  <h1>Desarrollado por: Luisa Fernanda Mejía. Dic, 2023.</h1>
+</section>
+    <script>
+        function toggleSection(sectionId) {
+            var section = document.getElementById(sectionId);
+            section.style.display = section.style.display === 'none' ? 'block' : 'none';
+        }
+
+        function toggleSubsection(subsectionId) {
+            var subsection = document.getElementById(subsectionId);
+            subsection.style.display = subsection.style.display === 'none' ? 'block' : 'none';
+        }
+    </script>
+</body>
+</html>
+
+
+
